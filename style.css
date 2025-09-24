@@ -1,0 +1,16 @@
+body {
+    font-size: 50px;
+}
+.center {
+    text-align: center;
+}
+
+#word {
+    font-size: 1em; 
+    transition: font-size 0.3s ease;
+}
+
+#word:hover {
+    font-size: 1.2em; 
+}
+
