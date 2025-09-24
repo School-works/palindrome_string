@@ -1,5 +1,5 @@
 <?php
-$str = "anna";
+$str = "saippuakivikauppias";
 $isPalindrome = false;
 if ($str == strrev($str)) {
     $isPalindrome = true;
@@ -17,8 +17,8 @@ if ($str == strrev($str)) {
 </head>
 
 <body>
-    <h1 class="center">La parola:  <span id="word"><?php echo $str ?></span></h1>
-    <h3 class="center"> <span style="color: green">
+    <h1>La parola:  <span id="word"><?php echo $str ?></span></h1>
+    <h3> <span style="color: green">
             <?php if ($isPalindrome) {
                 echo "È palindroma";
             }  ?>
@@ -27,6 +27,15 @@ if ($str == strrev($str)) {
             <?php if (!$isPalindrome) {
                 echo "NON è palindroma";
             } ?> </span>
+    </h3>
+
+    <h3>
+        <div>
+            E diventa <span style="color: turquoise"><?php 
+            echo str_replace(['a', 'e', 'i', 'o', 'u'], '', $str);
+        ?> </span>se tolte le vocali
+        </div>
+        
     </h3>
 </body>
 
